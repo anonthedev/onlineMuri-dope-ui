@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  --color1: #562e08;
+  --color2: #f8964f;
+}
+
+.nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon h1 {
+  cursor: pointer;
+  font-family: "Arial Black";
+  font-weight: 900;
+  font-size: 30px;
+  color: #562e08;
+}
+
+.icon h1 span {
+  color: #f8964f;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-items p {
+  cursor: pointer;
+  font-family: "Archivo";
+  color: var(--color1);
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 30px;
+  transition: all 0.3s linear;
+}
+
+.nav-items p:hover {
+  color: var(--color2);
+}
+
+.nav-login-signup {
+  cursor: pointer;
+  font-family: "Archivo";
+  font-weight: 700;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-btn {
+  cursor: pointer;
+  font-family: "Archivo";
+  font-weight: 700;
+  color: white;
+  width: 108px;
+  height: 47px;
+  background: #f89954;
+  box-shadow: -3px 8px 24px rgba(248, 153, 84, 0.35);
+  border: none;
+  border-radius: 116px;
+  margin-left: 30px;
+}
+
+.content {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.wheat {
+  position: absolute;
+  width: 200px;
+  z-index: -1;
+}
+
+.catlari {
+  position: absolute;
+  bottom: 0px;
+  width: 450px;
+  z-index: -1;
+}
+
+.hero-img {
+  margin-top: 100px;
+  width: 400px;
+}
+
+.hero-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  outline: 50px solid #ffeddc;
+  border-radius: 50%;
+}
+
+.content-text-head h2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial Black";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  color: var(--color1);
+}
+
+.content-text-head h2 span {
+  margin-top: -30px;
+  color: var(--color2);
+}
+
+.content-text-desc p {
+  margin-top: 30px;
+  font-family: "Archivo";
+  font-size: 17px;
+  font-weight: 500;
+  max-width: 50ch;
+}
+
+.content-text-btn button {
+  cursor: pointer;
+  font-family: "Archivo";
+  font-weight: 700;
+  color: white;
+  background: #f89954;
+  box-shadow: -3px 8px 24px rgba(248, 153, 84, 0.35);
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+  height: 60px;
+  margin-top: 30px;
+}
+
+.follow {
+  color: var(--color1);
+  font-family: "Archivo";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 120px;
+}
+
+.follow i {
+  cursor: pointer;
+  transition: all 0.3s linear;
+  margin-left: 10px;
+}
+
+.follow i:hover {
+  color: var(--color2);
+}
